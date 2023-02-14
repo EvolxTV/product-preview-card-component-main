@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap");
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.card-container {
+  background-color: var(--white);
+  max-width: 40.63rem;
+  max-height: 30.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 1rem;
+}
+#product-image {
+  max-width: 21.25rem;
+  border-radius: 1rem 0px 0px 1rem;
+}
+section {
+  padding: 2rem;
+}
+section #span-title {
+  color: var(--dark-grayish-blue);
+  letter-spacing: 0.3rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+section h1 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--very-dark-blue);
+  font-size: 2.375rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  line-height: 2.0625rem;
+}
+section p {
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  color: var(--dark-grayish-blue);
+}
+.prices {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.prices #price-1 {
+  font-family: "Fraunces", serif;
+  color: var(--dark-cyan);
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-right: 1.25rem;
+}
+.prices #price-2 {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+.button {
+  margin-top: 1.75rem;
+}
+.button button {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding: 0.9rem 4.5rem 0.9rem 4.5rem;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button button:hover {
+  background-color: hsl(158, 35%, 18%);
+}
+.button img {
+  margin-right: 0.9375rem;
+}
